@@ -5,7 +5,7 @@ describe('StringReverser:', () => {
     let reverser = new StringReverser("Hello");
 
     describe('constructor', () => {
-	    it('sets up the reader properties accordingly', () => {	        
+	    it('sets up the instance properties accordingly', () => {	        
 	        expect(reverser.str).toBe("Hello");	        
 	    });
 	});
