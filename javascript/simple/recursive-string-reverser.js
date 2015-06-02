@@ -16,7 +16,7 @@ class RecursiveStringReverser {
      * @return {String} the reversed string
      */
     reverse(str) {  
-        let length = str.length      
+        let length = str.length;    
         if (str.length === 0) {
             return this.reversed;
         } else {
