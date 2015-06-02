@@ -1,0 +1,17 @@
+{
+    "name": "js-code-katas",
+    "description": "A collection of testable ES6 katas to continuously sharpen the toolset.",
+    "version": "0.0.1",
+    "private": true,
+    "author": "Hany Elemary <hany.elemary@gmail.com>",
+    "devDependencies": {
+        "karma": "~0.12.31",
+        "browserify": "^9.0.3",
+        "babelify": "~5.0.3",
+        "karma-browserify": "~3.0.2",
+        "karma-jasmine": "~0.3.5",
+        "grunt-karma": "~0.8.0",
+        "karma-chrome-launcher": "~0.1.2",
+        "karma-phantomjs-launcher": "~0.1.4"
+    }
+}
