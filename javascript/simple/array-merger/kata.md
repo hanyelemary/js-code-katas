@@ -1,0 +1,1 @@
+Given an unknown number of arrays, combine the arrays by alternatingly taking elements. For example: given the two lists [a, b, c] and [1, 2, 3], the function should return [a, 1, b, 2, c, 3].

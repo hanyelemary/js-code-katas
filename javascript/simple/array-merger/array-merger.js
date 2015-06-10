@@ -1,5 +1,5 @@
 /**
- * A class that mergers arrays.
+ * A class that merges arrays.
  */
 class ArrayMerger {
 	/**
@@ -10,7 +10,7 @@ class ArrayMerger {
 
 	/**
 	 * Merges an unknown number of arrays passed in.
-	 * @param  {...[type]} arrays [description]
+	 * @param  {...arrays} arrays an unknown number of arrays (ES6 spread operator).
 	 * @return {Array} a merged array made up of all arrays passed in.
 	 *
 	 * Example: merge([1, 2, 3], [a, b, c]);
