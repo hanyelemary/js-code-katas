@@ -1,0 +1,1 @@
+Given a list of non negative integers, write a class/function that arranges them such that they form the largest possible number. For example, given [50, 2, 1, 9], the largest formed number is 95021.

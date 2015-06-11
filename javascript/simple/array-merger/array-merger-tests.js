@@ -35,5 +35,10 @@ describe('ArrayMerger:', () => {
 			let list = merger.merge([1, 2, 3], ['a', 'b', 'c'], ['~', '~', '~']);
 			expect(list).toEqual([1, 'a', '~', 2, 'b', '~', 3, 'c', '~']);
 		});
+
+		it('merges arrays of varying lengths together', () => {
+			let list = merger.merge([1, 2, 3], ['a', 'c'], ['~', '~', '~']);
+			expect(list).toEqual([1, 'a', '~', 2, 'c', '~', 3, '~']);
+		});
 	});
 });
