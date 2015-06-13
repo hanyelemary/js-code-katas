@@ -1,5 +1,5 @@
 # js-code-katas
-A collection of ES6 testable JavaScript katas to continuously sharpen the toolset and demonstrate the capabilities of ES6 (Harmony).
+A collection of ES6 testable JavaScript katas to continuously sharpen the toolset and demonstrate the capabilities of ES6 (Harmony). The project uses [Babel](http://babeljs.io/) (formerly known as 6to5), which is a transpiler that transforms your ES6 code into ES5 to become browser-compatible as ES6 support catches on.
 
 ## Local Setup
 Use [Grunt](http://gruntjs.com/) to build the project. Grunt and Grunt plugins are installed and managed via npm, the [Node.js](http://nodejs.org/) package manager.
