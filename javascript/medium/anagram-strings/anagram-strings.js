@@ -23,20 +23,20 @@ class AnagramStrings {
 			str2 = this.string2;
 
 		if (str1.length !== str2.length) {
-    		return false;
-  		} else {
-  			//split the strings into an array of characters.
-  			//sort the array
-  			//join the array back into a string
-	    	str1 = str1.split('').sort().join('');
-	    	str2 = str2.split('').sort().join('');
-		    
+			return false;
+		} else {
+			//split the strings into an array of characters.
+			//sort the array
+			//join the array back into a string
+			str1 = str1.split('').sort().join('');
+			str2 = str2.split('').sort().join('');
+		
 			if (str1 === str2) {
-			  return true;
+				return true;
 			} else {
-			  return false;
+				return false;
 			}
-	    }
+		}
 	}
 }
 
