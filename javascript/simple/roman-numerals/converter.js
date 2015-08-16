@@ -9,7 +9,9 @@ class Converter {
      * @return {String} a roman numeral.
      */
     static numberToNumeral(number) {
-        throw new Error('parameter is required and must be a number');
+        if (!Number.isInteger(number) || number <= 0) {
+            throw new Error('parameter is required and must be a number');
+        }        
     }
 }
 

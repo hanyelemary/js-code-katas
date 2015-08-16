@@ -17,4 +17,12 @@ describe('Converter:', () => {
 			new Error('parameter is required and must be a number')
 		);
 	});
+
+	it('throws an error when a negative integer param is passed to the converting function', () => {
+		expect(() => {
+			Converter.numberToNumeral(-5)
+		}).toThrow(
+			new Error('parameter is required and must be a number')
+		);
+	});
 });
