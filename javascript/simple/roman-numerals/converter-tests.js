@@ -2,12 +2,13 @@ import Converter from './converter';
 
 describe('Converter:', () => {	
 
+	let expectedMessage = 'parameter is required and must be a positive integer between [1-3999]';
 	describe('numberToNumeral - negative test cases', () => {
 		it('throws an error when nothing is passed to the converting function', () => {
 			expect(() => {
 				Converter.numberToNumeral()
 			}).toThrow(
-				new Error('parameter is required and must be a positive number')
+				new Error(expectedMessage)
 			);
 		});
 
@@ -15,7 +16,7 @@ describe('Converter:', () => {
 			expect(() => {
 				Converter.numberToNumeral("some string")
 			}).toThrow(
-				new Error('parameter is required and must be a positive number')
+				new Error(expectedMessage)
 			);
 		});
 
@@ -23,7 +24,7 @@ describe('Converter:', () => {
 			expect(() => {
 				Converter.numberToNumeral(-5)
 			}).toThrow(
-				new Error('parameter is required and must be a positive number')
+				new Error(expectedMessage)
 			);
 		});
 	});	

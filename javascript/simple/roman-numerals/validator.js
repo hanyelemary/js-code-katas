@@ -13,6 +13,15 @@ class Validator {
 	static isValidNumber(number) {
 		return (Number.isInteger(number) && (number >= 1 && number <= 3999));
 	}
+
+	/**
+	 * A convenience function to negate isValidNumber()
+	 * @param  {Integer} number a positive integer.
+	 * @return {Boolean} a true/false.
+	 */
+	static isNotValidNumber(number) {
+		return !this.isValidNumber(number);
+	}
 }
 
 export default Validator;
