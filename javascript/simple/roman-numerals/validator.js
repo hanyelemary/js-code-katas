@@ -22,6 +22,10 @@ class Validator {
 	static isNotValidNumber(number) {
 		return !this.isValidNumber(number);
 	}
+
+	static isValidRomanNumeral(romanNumeral) {
+		return typeof(romanNumeral) === 'string' && romanNumeral.length !== 0;
+	}	
 }
 
 export default Validator;

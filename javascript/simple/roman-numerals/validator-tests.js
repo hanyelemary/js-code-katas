@@ -21,4 +21,12 @@ describe('Validator:', () => {
 			expect(Validator.isValidNumber(1988)).toBe(true);
 		});
 	});
+
+	describe('isValidRomanNumeral', () => {
+		it('returns false if anything other than a non empty string is passed', () => {
+			expect(Validator.isValidRomanNumeral('')).toBe(false);
+			expect(Validator.isValidRomanNumeral()).toBe(false);
+			expect(Validator.isValidRomanNumeral(1)).toBe(false);
+		})
+	});
 });
