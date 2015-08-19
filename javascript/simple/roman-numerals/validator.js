@@ -23,6 +23,11 @@ class Validator {
 		return !this.isValidNumber(number);
 	}
 
+	/**
+	 * function to determine whether a roman numeral is valid.
+	 * @param  {String}  romanNumeral a roman numeral as in V, III, etc.
+	 * @return {Boolean} true/false
+	 */
 	static isValidRomanNumeral(romanNumeral) {
 
 		function isValidString() {
