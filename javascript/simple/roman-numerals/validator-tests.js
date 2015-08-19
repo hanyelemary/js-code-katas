@@ -27,6 +27,20 @@ describe('Validator:', () => {
 			expect(Validator.isValidRomanNumeral('')).toBe(false);
 			expect(Validator.isValidRomanNumeral()).toBe(false);
 			expect(Validator.isValidRomanNumeral(1)).toBe(false);
-		})
+		});
+
+		it('returns false if a non matching pattern is passed', () => {
+			expect(Validator.isValidRomanNumeral('MMMM')).toBe(false);
+			expect(Validator.isValidRomanNumeral('CCCC')).toBe(false);
+			expect(Validator.isValidRomanNumeral('IIII')).toBe(false);
+			expect(Validator.isValidRomanNumeral('XXXX')).toBe(false);
+		});
+
+		it('returns true if a matching pattern is passed', () => {
+			expect(Validator.isValidRomanNumeral('MMMM')).toBe(false);
+			expect(Validator.isValidRomanNumeral('CCCC')).toBe(false);
+			expect(Validator.isValidRomanNumeral('IIII')).toBe(false);
+			expect(Validator.isValidRomanNumeral('XXXX')).toBe(false);
+		});
 	});
 });

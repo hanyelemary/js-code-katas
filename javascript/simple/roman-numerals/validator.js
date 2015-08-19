@@ -24,7 +24,17 @@ class Validator {
 	}
 
 	static isValidRomanNumeral(romanNumeral) {
-		return typeof(romanNumeral) === 'string' && romanNumeral.length !== 0;
+
+		function isValidString() {
+			return typeof(romanNumeral) === 'string' && romanNumeral.length !== 0;
+		}
+
+		function isValidPattern() {
+			let pattern = /^M{0,3}(?:D?C{0,3}|C[MD])(?:L?X{0,3}|X[CL])(?:V?I{0,3}|I[XV])$/;
+			return pattern.test(romanNumeral);
+		}
+
+		return (isValidString() && isValidPattern());		
 	}	
 }
 
