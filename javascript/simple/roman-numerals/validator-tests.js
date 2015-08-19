@@ -37,10 +37,10 @@ describe('Validator:', () => {
 		});
 
 		it('returns true if a matching pattern is passed', () => {
-			expect(Validator.isValidRomanNumeral('MMMM')).toBe(false);
-			expect(Validator.isValidRomanNumeral('CCCC')).toBe(false);
-			expect(Validator.isValidRomanNumeral('IIII')).toBe(false);
-			expect(Validator.isValidRomanNumeral('XXXX')).toBe(false);
+			expect(Validator.isValidRomanNumeral('I')).toBe(true);
+			expect(Validator.isValidRomanNumeral('IV')).toBe(true);
+			expect(Validator.isValidRomanNumeral('MCMLXXXIX')).toBe(true);
+			expect(Validator.isValidRomanNumeral('MLXVI')).toBe(true);
 		});
 	});
 });

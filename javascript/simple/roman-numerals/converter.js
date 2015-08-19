@@ -29,6 +29,17 @@ class Converter {
 
         return romanNumeral;
     }
+
+    /**
+     * function to convert a roman numeral to a number.
+     * @param  {String} romanNumeral a roman numeral.
+     * @return {Integer} the converted number.
+     */
+    static romanNumeralToNumber(romanNumeral) {
+        if (Validator.isNotValidRomanNumeral(romanNumeral)) {
+            throw new Error('parameter is required and must be a valid roman numeral');
+        }
+    }
 }
 
 export default Converter;

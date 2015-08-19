@@ -40,6 +40,15 @@ class Validator {
 		}
 
 		return (isValidString() && isValidPattern());		
+	}
+
+	/**
+	 * A convenience function that negates isValidRomanNumeral
+	 * @param  {String}  romanNumeral a roman numeral as in V, III, etc.
+	 * @return {Boolean} true/false
+	 */
+	static isNotValidRomanNumeral(romanNumeral) {
+		return !this.isValidRomanNumeral(romanNumeral);
 	}	
 }
 
