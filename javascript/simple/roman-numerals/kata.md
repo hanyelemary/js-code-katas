@@ -22,3 +22,23 @@ So that I can label my game releases using Roman numerals
 | IX	          | 9             |
 | MLXVI           | 1066          |
 | MCMLXXXIX       | 1989          |
+
+
+## Feature 2
+As a marketing manager
+I want customers to be able to convert numerals to numbers
+So that they can buy the latest version of the game
+
+- Given I have started the converter
+- When I enter $numeral
+- Then $number is returned
+
+### Test Cases
+
+| Numeral         | Number        |
+| :-------------: |:-------------:|
+| I	   			  | 1             |
+| III             | 3             |
+| IX	          | 9             |
+| MLXVI           | 1066          |
+| MCMLXXXIX       | 1989          |

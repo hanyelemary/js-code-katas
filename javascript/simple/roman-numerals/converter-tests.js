@@ -51,6 +51,33 @@ describe('Converter:', () => {
 					new Error(expectedMessage)
 				);
 			});
+
+			it('throws an error when a number is passed to the converting function', () => {
+				expect(() => {
+					Converter.romanNumeralToNumber(1)
+				}).toThrow(
+					new Error(expectedMessage)
+				);
+			});
+
+			it('throws an error when an empty string is passed to the converting function', () => {
+				expect(() => {
+					Converter.romanNumeralToNumber('')
+				}).toThrow(
+					new Error(expectedMessage)
+				);
+			});
 		});	
-	});	
+
+		describe('successful conversion', () => {
+			it('converts the roman numeral to number', () => {
+				expect(Converter.romanNumeralToNumber('I')).toEqual(1);
+				expect(Converter.romanNumeralToNumber('V')).toEqual(5);
+				expect(Converter.romanNumeralToNumber('M')).toEqual(1000);
+				expect(Converter.romanNumeralToNumber('IX')).toEqual(9);
+				expect(Converter.romanNumeralToNumber('MLXVI')).toEqual(1066);
+				expect(Converter.romanNumeralToNumber('MCMLXXXIX')).toEqual(1989);
+			});			
+		});
+	});		
 });
