@@ -19,6 +19,26 @@ class NumberOccurrences {
 			throw new Error('An array of integers is required.');
 		} else if (array.length === 1) {
 			return array[0];
+		} else {
+			array.sort();
+			let number = null,				
+				previousCount = 1,
+				count = 1;
+
+			for (let i = 0; i < array.length; i++) {
+				if (array[i + 1] !== undefined) {
+					if (array[i] == array[i + 1]) {
+						count++;						
+					} else {
+						if (count >= previousCount) {
+							number = array[i];
+						}
+						previousCount = count;
+						count = 1;
+					}					
+				}								
+			}
+			return number;
 		}
 	}
 

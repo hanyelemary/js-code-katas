@@ -16,16 +16,26 @@ describe('NumberOccurrences: ', () => {
 			}).toThrow(new Error('An array of integers is required.'));
 		});
 
-		it('returns an error if nothing is passed in', () => {
+		it('returns an error if an empty array is passed in', () => {
 			expect(() => {
 				numberOccurrences.find([])
 			}).toThrow(new Error('An array of integers is required.'));
 		});
 
-		it('returns the number if the array has a single number', () => {
+		it('returns number if array has a single number', () => {
 			expect(numberOccurrences.find([2])).toEqual(2);
 		});
 
-		// it('')
+		it('returns most frequent number within array', () => {
+			expect(numberOccurrences.find([2, 3, 5, 4, 3, 3])).toEqual(3);
+		});
+
+		it('returns most frequent number within array', () => {
+			expect(numberOccurrences.find([2, 3, 2, 2, 3])).toEqual(2);
+		});
+
+		it('returns smallest most frequent number if in conflict with others in array', () => {
+			expect(numberOccurrences.find([1, 2])).toEqual(1);
+		});
 	});
 });
